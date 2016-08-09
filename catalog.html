@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Поиск жилья в Седоне</title>
+</head>
+<body>
+	<header class="main-header">
+		<nav class="main-navigation">
+			<ul class="main-nav-left">
+				<li><a href="#">Информация</a></li>
+				<li><a href="#">Фото и видео</a></li>
+			</ul>
+			<a href="index.html"><img src="http://placehold.it/150x100" alt="логотип" width="150" height="100"></a>
+			<ul class="main-nav-right">
+				<li><a href="#">Карта штата</a></li>
+				<li><a href="#">Гостиницы</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main class="main-content">
+		<div class="block-filter">
+			<form class="filter-form" action="#" method="post">
+				<label>Инфраструктура</label>
+				<input id="pool" type="checkbox" name="pool" checked>
+				<label for="pool">Бассейн</label>
+
+				<input id="parking" type="checkbox" name="parking">
+				<label for="parking">Парковка</label>
+
+				<input id="inet" type="checkbox" name="inet">
+				<label for="inet">Wi-fi</label>
+
+				<label> Тип жилья:</label>
+				<input id="hotel" type="checkbox" name="hotel" checked>
+				<label for="hotel">Гостиница</label>
+
+				<input id="motel" type="checkbox" name="motel" checked>
+				<label for="motel">Мотель</label>
+
+				<input id="appartments" type="checkbox" name="appartments" checked>
+				<label for="appartments">Аппартаменты</label>
+
+				<label for="cost">Стоимость в сутки (Р):</label>
+				<div class="output-area">
+					<output name="min-cost-out">0</output>
+					<output name="max-cost-out">3000</output>
+				</div>
+				<input id="cost" type="range" name="day-cost" min="0" max="3000" step="1">
+				<button class="btn-filter" type="submit">Показать</button>
+			</form>
+		</div>
+		<div class="main-sort">
+			<span>Найдено: 3</span>
+			<ul>
+				<li>Сортировка:</li>
+				<li><a href="#">По цене</a></li>
+				<li><a href="#">По типу</a></li>
+				<li><a href="#">по рейтингу</a></li>
+			</ul>
+			<button class="btn-arrow-up" type="submit">ВВерх</button>
+			<button class="btn-arrow-down" type="submit">Вниз</button>
+		</div>
+		<article class="content-block">
+			<img src="img/#" alt="" width="150" height="100">
+			<div class="content-description">
+				<span>Amara resort & spa</span>
+				<span>Гостиница</span>
+				<span>от 3500 Р.</span>
+				<button class="btn-more" type="submit">Подробнее</button>
+				<button class="btn-reservation" type="submit">Забронировать</button>
+			</div>
+			<div class="content-rating">
+				<div class="stars-ratin"></div>
+				<div class="visual-rating">
+					<span>Рейтинг:8,5</span>
+				</div>
+			</div>
+		</article>
+		<article class="content-block">
+			<img src="img/#" alt="" width="150" height="100">
+			<div class="content-description">
+				<span>Desert quail inn</span>
+				<span>Мотель</span>
+				<span>от 2000 Р.</span>
+				<button class="btn-more" type="submit">Подробнее</button>
+				<button class="btn-reservation" type="submit">Забронировать</button>
+			</div>
+			<div class="content-rating">
+				<div class="stars-ratin"></div>
+				<div class="visual-rating">
+					<span>Рейтинг:8,9</span>
+				</div>
+			</div>
+		</article>
+		<article class="content-block">
+			<img src="img/#" alt="" width="150" height="100">
+			<div class="content-description">
+				<span>Villas at poco diablo</span>
+				<span>Апартаменты</span>
+				<span>от 4000 Р.</span>
+				<button class="btn-more" type="submit">Подробнее</button>
+				<button class="btn-reservation" type="submit">Забронировать</button>
+			</div>
+			<div class="content-rating">
+				<div class="stars-ratin"></div>
+				<div class="visual-rating">
+					<span>Рейтинг:9,2</span>
+				</div>
+			</div>
+		</article>
+	</main>
+	<footer class="main-footer">
+		<section class="footer-instagram">
+			<a href="#">#visitsedona</a>
+		</section>
+		<section class="footer-social">
+			<a class="btn" href="#">Твиттер</a>
+			<a class="btn" href="#">Фейсбук</a>
+			<a class="btn" href="#">YouTube</a>
+		</section>
+		<section class="footer-copyright">
+			<a href="#"><img src="#" alt="" width="150" height="50"></a>
+		</section>
+	</footer>
+</body>
+</html>
