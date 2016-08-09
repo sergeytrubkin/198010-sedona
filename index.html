@@ -82,6 +82,23 @@
 				<span>Заинтересовались?</span>
 				<span>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</span>
 			</div>
+			<article class="search-hotel">
+				<button class="btn" type="button">Поиск гостиницы в седоне</button>
+				<form action="#">
+					<label for="date-arrival">Дата заезда:</label>
+					<input id="date-arrival" type="date" name="date-arrival" >
+
+					<label for="date-departure">Дата выезда:</label>
+					<input id="date-departure" type="date" name="date-departure">
+
+					<label for="adults">Взрослые:</label>
+					<input id="adults" type="number" name="adults" min="0" step="1" value="2">
+
+					<label for="children">Дети:</label>
+					<input id="children" type="number" name="children" min="0" step="1" value="0">
+					<button class="btn-search" type="submit">Найти</button>
+				</form>
+			</article>
 			<div class="map">
 				<img src="http://placehold.it/1200x600" alt="" width="1200" height="600">
 			</div>
