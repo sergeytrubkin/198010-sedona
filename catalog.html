@@ -7,46 +7,40 @@
 <body>
 	<header class="main-header">
 		<nav class="main-navigation">
-			<ul class="main-nav-left">
-				<li><a href="#">Информация</a></li>
-				<li><a href="#">Фото и видео</a></li>
-			</ul>
-			<a href="index.html"><img src="http://placehold.it/150x100" alt="логотип" width="150" height="100"></a>
-			<ul class="main-nav-right">
-				<li><a href="#">Карта штата</a></li>
-				<li><a href="#">Гостиницы</a></li>
-			</ul>
-		</nav>
+  			<ul class="main-nav">
+  				<li><a href="#">Информация</a></li>
+  				<li><a href="#">Фото и видео</a></li>
+  				<li><a href="index.html"><img src="http://placehold.it/150x100" alt="логотип" width="150" height="100"></a></li>
+  				<li><a href="#">Карта штата</a></li>
+  				<li><a href="#">Гостиницы</a></li>
+  			</ul>
+  		</nav>
 	</header>
 	<main class="main-content">
 		<div class="block-filter">
 			<form class="filter-form" action="#" method="post">
-				<label>Инфраструктура</label>
-				<input id="pool" type="checkbox" name="pool" checked>
-				<label for="pool">Бассейн</label>
-
-				<input id="parking" type="checkbox" name="parking">
-				<label for="parking">Парковка</label>
-
-				<input id="inet" type="checkbox" name="inet">
-				<label for="inet">Wi-fi</label>
-
-				<label> Тип жилья:</label>
-				<input id="hotel" type="checkbox" name="hotel" checked>
-				<label for="hotel">Гостиница</label>
-
-				<input id="motel" type="checkbox" name="motel" checked>
-				<label for="motel">Мотель</label>
-
-				<input id="appartments" type="checkbox" name="appartments" checked>
-				<label for="appartments">Аппартаменты</label>
-
-				<label for="cost">Стоимость в сутки (Р):</label>
-				<div class="output-area">
-					<output name="min-cost-out">0</output>
-					<output name="max-cost-out">3000</output>
-				</div>
-				<input id="cost" type="range" name="day-cost" min="0" max="3000" step="1">
+				<fieldset>
+					<legend>Инфраструктура</legend>
+					<input id="pool" type="checkbox" name="pool" checked>
+					<label for="pool">Бассейн</label>
+					<input id="parking" type="checkbox" name="parking">
+					<label for="parking">Парковка</label>
+					<input id="inet" type="checkbox" name="inet">
+					<label for="inet">Wi-fi</label>
+				</fieldset>
+				<fieldset>
+					<legend> Тип жилья:</legend>
+					<input id="hotel" type="checkbox" name="hotel" checked>
+					<label for="hotel">Гостиница</label>
+					<input id="motel" type="checkbox" name="motel" checked>
+					<label for="motel">Мотель</label>
+					<input id="appartments" type="checkbox" name="appartments" checked>
+					<label for="appartments">Аппартаменты</label>
+				</fieldset>
+				<fieldset>
+					<legend>Стоимость в сутки (Р):</legend>
+					<input type="range" name="day-cost" min="0" max="3000" step="1">
+				</fieldset>
 				<button class="btn-filter" type="submit">Показать</button>
 			</form>
 		</div>
@@ -64,11 +58,11 @@
 		<article class="content-block">
 			<img src="img/#" alt="" width="150" height="100">
 			<div class="content-description">
-				<span>Amara resort & spa</span>
+				<h2>Amara resort & spa</h2>
 				<span>Гостиница</span>
 				<span>от 3500 Р.</span>
-				<button class="btn-more" type="submit">Подробнее</button>
-				<button class="btn-reservation" type="submit">Забронировать</button>
+				<a class="btn-more" href="#">Подробнее</a>
+				<a class="btn-reservation" href="#">Забронировать</a>
 			</div>
 			<div class="content-rating">
 				<div class="stars-ratin"></div>
@@ -80,11 +74,11 @@
 		<article class="content-block">
 			<img src="img/#" alt="" width="150" height="100">
 			<div class="content-description">
-				<span>Desert quail inn</span>
+				<h2>Desert quail inn</h2>
 				<span>Мотель</span>
 				<span>от 2000 Р.</span>
-				<button class="btn-more" type="submit">Подробнее</button>
-				<button class="btn-reservation" type="submit">Забронировать</button>
+				<a class="btn-more" href="#">Подробнее</a>
+				<a class="btn-reservation" href="#">Забронировать</a>
 			</div>
 			<div class="content-rating">
 				<div class="stars-ratin"></div>
@@ -96,11 +90,11 @@
 		<article class="content-block">
 			<img src="img/#" alt="" width="150" height="100">
 			<div class="content-description">
-				<span>Villas at poco diablo</span>
+				<h2>Villas at poco diablo</h2>
 				<span>Апартаменты</span>
 				<span>от 4000 Р.</span>
-				<button class="btn-more" type="submit">Подробнее</button>
-				<button class="btn-reservation" type="submit">Забронировать</button>
+				<a class="btn-more" href="#">Подробнее</a>
+				<a class="btn-reservation" href="#">Забронировать</a>
 			</div>
 			<div class="content-rating">
 				<div class="stars-ratin"></div>

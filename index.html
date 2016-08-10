@@ -5,32 +5,30 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-		<header class="main-header">
-			<nav class="main-navigation">
-				<ul class="main-nav-left">
-					<li><a href="#">Информация</a></li>
-					<li><a href="#">Фото и видео</a></li>
-				</ul>
-					<img src="http://placehold.it/150x100" alt="логотип" width="150" height="100">
-				<ul class="main-nav-right">
-					<li><a href="#">Карта штата</a></li>
-					<li><a href="#">Гостиницы</a></li>
-				</ul>
-			</nav>
+  	<header class="main-header">
+  		<nav class="main-navigation">
+  			<ul class="main-nav">
+  				<li><a href="#">Информация</a></li>
+  				<li><a href="#">Фото и видео</a></li>
+  				<li><a><img src="http://placehold.it/150x100" alt="логотип" width="150" height="100"></a></li>
+  				<li><a href="#">Карта штата</a></li>
+  				<li><a href="catalog.html">Гостиницы</a></li>
+  			</ul>
+  		</nav>
 		</header>
 		<main class="main-conteiner">
 			<div class="welcome-img">
 				<img src="http://placehold.it/1200x600" alt="Приветсвие" width="1200" height="600">
 			</div>
 			<div class="descriptive">
-				<h3>Седона - небольшой городок в аризоне, заслуживающий большего!</h3>
-				<span>Рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</span>
+				<h1>Седона - небольшой городок в аризоне, заслуживающий большего!</h1>
+				<p>Рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</p>
 			</div>
 			<div class="block-reason-img">
 				<div class="description">
-					<span>Настоящий городок</span>
+					<h2>Настоящий городок</h2>
 					<span>— №1 —</span>
-					<span>Седона - не аттракцион для туристов, там течет своя жизнь</span>
+					<p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
 				</div>
 				<div class="reason-img">
 					<img src="http://placehold.it/700x200" alt="" width="700" height="200">
@@ -81,11 +79,11 @@
 				</div>
 			</div>
 			<div class="date-travel">
-				<span>Заинтересовались?</span>
-				<span>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</span>
+				<h2>Заинтересовались?</h2>
+				<p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
 			</div>
-			<article class="search-hotel">
-				<button class="btn" type="button">Поиск гостиницы в седоне</button>
+			<div class="search-hotel">
+				<a href="#" class="btn">Поиск гостиницы в седоне</a>
 				<form action="#">
 					<label for="date-arrival">Дата заезда:</label>
 					<input id="date-arrival" type="date" name="date-arrival" >
@@ -100,7 +98,7 @@
 					<input id="children" type="number" name="children" min="0" step="1" value="0">
 					<button class="btn-search" type="submit">Найти</button>
 				</form>
-			</article>
+			</div>
 			<div class="map">
 				<img src="http://placehold.it/1200x600" alt="" width="1200" height="600">
 			</div>
