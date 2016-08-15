@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-  	<header class="main-header">
-  		<nav class="main-navigation">
-  			<ul class="main-nav">
-  				<li><a href="#">Информация</a></li>
-  				<li><a href="#">Фото и видео</a></li>
-  				<li><a><img src="img/logo.png" alt="логотип" width="138" height="70"></a></li>
-  				<li><a href="#">Карта штата</a></li>
-  				<li><a href="catalog.html">Гостиницы</a></li>
-  			</ul>
-  		</nav>
+<head>
+	<meta charset="utf-8">
+	<title>HTML Academy: Седона</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="wrapper">
+		<header class="main-header">
+			<nav class="main-navigation">
+				<ul class="main-nav">
+					<li><a href="#">Информация</a></li>
+					<li><a href="#">Фото и видео</a></li>
+					<li><a><img src="img/logo.png" alt="логотип" width="138" height="70"></a></li>
+					<li><a href="#">Карта штата</a></li>
+					<li><a href="catalog.html">Гостиницы</a></li>
+				</ul>
+			</nav>
 		</header>
 		<main class="main-conteiner">
 			<div class="welcome-img">
@@ -26,66 +27,70 @@
 				<p>Рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</p>
 			</div>
 			<div class="block-reason-img">
-				<div class="description">
-					<h2>Настоящий городок</h2>
-					<span>— №1 —</span>
-					<p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
+				<div class="reason-description town">
+					<div class="text-block">
+						<h2>Настоящий<br> городок</h2>
+						<span>— №1 —</span>
+						<p>Седона — не аттракцион для туристов, там течет своя жизнь</p>
+					</div>
 				</div>
 				<div class="reason-img">
 					<img src="img/town.jpg" alt="" width="800" height="256">
 				</div>
 			</div>
-			<div class="main-tips">
-				<div class="main-tips-home">
+			<div class="block-main-tips clearfix">
+				<div class="main-tips home">
 					<img src="img/icon-house.png" alt="" width="75" height="72">
-					<span>Жилье</span>
+					<h2>Жилье</h2>
 					<span>Рекомендуем пожить в настоящем мотеле, все как в кино!</span>
 				</div>
-				<div class="main-tips-food">
+				<div class="main-tips food">
 					<img src="img/icon-food.png" alt="" width="74" height="70">
-					<span>Еда</span>
+					<h2>Еда</h2>
 					<span>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</span>
 				</div>
-				<div class="main-tips-souvenirs">
+				<div class="main-tips souvenirs">
 					<img src="img/icon-souvenir.png" alt="" width="64" height="76">
-					<span>Сувениры</span>
+					<h2>Сувениры</h2>
 					<span>Не только китайского, но и местного производства!</span>
 				</div>
 			</div>
 			<div class="block-reason-img">
+				<div class="reason-description bridge">
+					<div class="text-block">
+						<h2>Там есть<br> мост дьявола</h2>
+						<span>— №2 —</span>
+						<p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+					</div>
+				</div>
 				<div class="reason-img">
 					<img src="img/bridge.jpg" alt="" width="800" height="256">
 				</div>
-				<div class="description">
-					<span>Там есть мост дьявола</span>
-					<span>— №2 —</span>
-					<span>Да, по нему можно пройти! Если конечно вы осмелитесь</span>
-				</div>
 			</div>
-			<div class="block-reason-text">
+			<div class="block-reason-text clearfix">
 				<div class="reason-text">
-					<span>Небольшая площадь</span>
+					<h2>Небольшая площадь</h2>
 					<span>— №3 —</span>
-					<span>Все достопримечательности находятся очень близко</span>
+					<p>Все достопримечательности находятся очень близко</p>
 				</div>
 				<div class="reason-text">
-					<span>Красивая дорога</span>
+					<h2>Красивая дорога</h2>
 					<span>— №4 —</span>
-					<span>Ехать в седону из лас-вегаса совсем не скучно!</span>
+					<p>Ехать в седону из лас-вегаса совсем не скучно!</p>
 				</div>
 				<div class="reason-text">
-					<span>Мало туристов</span>
+					<h2>Мало туристов</h2>
 					<span>— №5 —</span>
-					<span>Большинство едет в гранд каньон и толпится там</span>
+					<p>Большинство едет в гранд каньон и толпится там</p>
 				</div>
 			</div>
 			<div class="date-travel">
 				<h2>Заинтересовались?</h2>
-				<p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+				<p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
 			</div>
 			<div class="search-hotel">
 				<a href="#" class="btn">Поиск гостиницы в седоне</a>
-				<form action="#">
+				<form class="search-hotel-form" action="#">
 					<label for="date-arrival">Дата заезда:</label>
 					<input id="date-arrival" type="date" name="date-arrival" >
 
@@ -109,14 +114,15 @@
 				<a href="#">#visitsedona</a>
 			</section>
 			<section class="footer-social">
-				<a class="btn" href="#">Твиттер</a>
-				<a class="btn" href="#">Фейсбук</a>
-				<a class="btn" href="#">YouTube</a>
+				<a class="btn-social" href="#">Твиттер</a>
+				<a class="btn-social" href="#">Фейсбук</a>
+				<a class="btn-social" href="#">YouTube</a>
 			</section>
 			<section class="footer-copyright">
 				<span>website by</span>
 				<a href="#"><img src="img/htmlacademy.png" alt="" width="113" height="39"></a>
 			</section>
 		</footer>
-  </body>
+		</div>
+</body>
 </html>
