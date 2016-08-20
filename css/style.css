@@ -1,13 +1,12 @@
-* {
-	padding: 0;
-	margin: 0;
+@font-face {
+	url: src(fonts/web/ptsans.woff);
 }
 
 body {
 	font-size: 14px;
 	line-height: 21px;
 	font-weight: normal;
-	font-family: "PTSans", sans-serif;
+	font-family: "PTSans";
 	text-transform: uppercase;
 	background-color: #f2f2f2;
 }
@@ -30,7 +29,7 @@ h2 {
 	clear: both;
 }
 
-.wrapper {
+.conteiner {
 	width: 1200px;
 	margin: 0 auto;
 	background-color: #fff;
@@ -38,41 +37,36 @@ h2 {
 
 /*								header 									*/
 
-.main-header {
-	width: 1200px;
-	min-height: 56px;
-
-	background-color: #fff;
-	margin-bottom: -20px;
+.main-nav {
+	padding: 0;
+	margin: 0;
 }
 
-.main-navigation {
-	margin: 0 70px;
-}
-
-.main-navigation ul li {
+.main-nav li {
 	display: inline-block;
-	min-width: 212px;
-	width: auto;
-	padding:0;
+	width: 240px;
+	padding-top: 15px;
+	padding-bottom: 15px;
 	margin:0;
 	margin-right: -5px;	
-	vertical-align: middle;
 	text-align: center;
-	background-color: ;
 }
 
-.main-navigation ul li:first-child {
-	text-align: left;
+.main-nav a {
+	text-decoration: none;
+	color: #000;
+	font-weight: bold;
+	line-height: 26px;
 }
 
-.main-navigation ul li:last-child {
-	text-align: right;
-}
-
-.main-navigation ul li:nth-child(3) {
+.main-nav li:nth-child(3) {
 	position: relative;
-	z-index: 1;
+}
+
+.main-nav img {
+	position: absolute;
+	left: 53px;
+	top: -2px;
 }
 
 /*									main 									*/
@@ -81,7 +75,9 @@ h2 {
 
 .welcome-img {
 	width: 1200px;
+	height: 509px;
 	margin-bottom: 60px;
+	background: #ddebf4 url(../img/Welcome.jpg) no-repeat 0 -55px;
 }
 
 .descriptive {
@@ -91,14 +87,13 @@ h2 {
 }
 
 .descriptive h1 {
-	text-transform: uppercase;
 	margin-bottom: 30px;
 }
 
 .descriptive p {
 	font-size: 14px;
-	text-transform: uppercase;
-	margin-bottom: 55px;
+	line-height: 26px;
+	margin-bottom: 50px;
 }
 
 .block-reason-img {
@@ -112,7 +107,6 @@ h2 {
 .reason-description {
 	width: 400px;
 	text-align: center;
-	margin-top: 50px;
 }
 
 .town {
@@ -125,47 +119,61 @@ h2 {
 
 .text-block {
 	width: 340px;
-	height: 200px;
 	margin: 0 auto;
+	padding-top: 40px;
 }
 
 .text-block span {
-	line-height: 4;
+	line-height: 40px;
 }
 
 .block-main-tips {
 	width: 1200px;
-	margin-bottom: 80px;
+	margin-bottom: 85px;
 }
 
 .main-tips {
 	width: 330px;
 	float: left;
-	margin-left: 35px;
-	margin-right: 35px;
+	padding: 0 35px;
 	text-align: center;
 }
 
-.main-tips img {
+/*.main-tips img {
 	display: block;
-	width: 75px;
+	width: auto;
 	height: auto;
 	margin: 0 auto;
-}
+}*/
 
 .main-tips h2 {
-	line-height: 3.5;
+	line-height: 21px;
+	font-size: 21px;
+	padding: 5px 0;
 }
 
 .main-tips span {
 	font-size: 14px;
-	line-height: 2;
+	line-height: 21px;
+	color: #333333;
 }
 
-/* без этого блока иконка сувениров меняет размеры. Не разобрался почему*/
-.souvenirs img {
-	width: 64px;
+.main-tips-icon {
+	width: 74px;
 	height: 76px;
+	margin: 0 auto;
+}
+
+.home {
+	background: url(../img/icon-house.png) no-repeat;
+}
+
+.food {
+	background: url("../img/icon-food.png") no-repeat;
+}
+
+.souvenirs {
+	background: url("../img/icon-souvenir.png") no-repeat;
 }
 
 .block-reason-text {
@@ -178,13 +186,17 @@ h2 {
 
 .reason-text {
 	float: left;
-	width: 400px;
+	width: 300px;
+	padding: 35px 50px;
 	text-align: center;
 	vertical-align: middle;
 }
 
+.reason-text span {
+	line-height: 36px;
+}
+
 .date-travel {
-	width: 500px;
 	margin: 0 auto;
 	margin-bottom: 50px;
 	text-align: center;
@@ -192,7 +204,7 @@ h2 {
 
 .date-travel h2 {
 	font-size: 30px;
-	line-height: 24px;
+	line-height: 26px;
 	margin-bottom: 30px;
 }
 
@@ -206,6 +218,7 @@ h2 {
 }
 
 .search-hotel .btn {
+	position: relative;
 	display: block;
 	width: 570px;
 	min-height: 85px;
@@ -219,14 +232,32 @@ h2 {
 }
 
 .search-hotel-form {
-	width: 470px;
+	position: absolute;
+	width: 460px;
 	height: 300px;
-	padding: 50px;
-
-	background-color: #ff0;
+	padding: 55px;
+	background-color: #fff;
 }
 
-.search-hotel-form .btn-search {
+.search-hotel-form input {
+	display: inline-block;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 10px;
+	margin-bottom: 30px;
+	border: none;
+	background-color: #f2f2f2;
+}
+
+.search-hotel-form input[type="date"] {
+	width: 315px;
+}
+
+.search-hotel-form input[type="number"] {
+	width: 115px;
+}
+
+.btn-search {
 	display: block;
 	width: 100%;
 	height: 58px;
@@ -237,9 +268,19 @@ h2 {
 	font-weight: bold;
 }
 
+.btn-search:hover {
+	background-color: #669ec0;
+}
+
+.btn-search:active {
+	color: #88b6d1;
+	background-color: #5496bd;
+}
+
 .map {
 	width: 1200px;
-	min-height: 475px;
+	height: 470px;
+	background: #f2f1ef url("../img/map.jpg") no-repeat;
 }
 
 /*						catalog.html 					*/
@@ -346,18 +387,12 @@ article:last-child {
 
 /*							footer 							*/
 
-.main-footer {
-	padding-left: 130px;
-	padding-right: 100px;
-	height: 120px;
-}
-
 section {
+	display: inline-block;
+	width: 400px;
+	margin-right: -5px;
+	text-align: center;
 	line-height: 120px;
-}
-
-.footer-instagram {
-	float: left;
 }
 
 .footer-instagram a {
@@ -368,20 +403,66 @@ section {
 
 }
 
-.footer-social {
-	display: block;
-	text-align: center;
-	width: 600px;
-	margin: 0 auto;
-	float: left;
+.btn-social {
+	display: inline-block;
+	font-size: 0;
+	width: 46px;
+	height: 48px;
+	vertical-align: middle;
+	margin: 0 2px;
+	text-decoration: none;
+	background: #81b3d2 url("../img/icon-social.png") no-repeat center;
 }
 
-.footer-copyright {
-	float: right;
+.btn-social-tw {
+	background-position: 0 0;
 }
 
-.footer-copyright img {
+.btn-social-fb {
+ background-position: -52px 0;
+}
+
+.btn-social-yt {
+ background-position: -104px 0;
+}
+
+.btn-social-tw:hover {
+	background-position: 0 -56px;
+}
+
+.btn-social-fb:hover {
+ background-position: -52px -56px;
+}
+
+.btn-social-yt:hover {
+ background-position: -104px -56px;
+}
+
+.btn-social-tw:active {
+	background-position: 0 -112px;
+}
+
+.btn-social-fb:active {
+ background-position: -52px -112px;
+}
+
+.btn-social-yt:active {
+ background-position: -104px -112px;
+}
+
+.footer-copyright a {
 	position: relative;
-	left: 10px;
 	top: 15px;
+	display: inline-block;
+	width: 113px;
+	height: 39px;
+	background: url(../img/icon-copyright.png) no-repeat;
+}
+
+.footer-copyright a:hover {
+	background-position: 0 -48px;
+}
+
+.footer-copyright a:active {
+	background-position: 0 -95px;
 }
