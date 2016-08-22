@@ -1,12 +1,13 @@
 @font-face {
-	url: src(fonts/web/ptsans.woff);
+	font-family: "PTSans";
+	src: url(../fonts/web/ptsans.woff);
 }
 
 body {
 	font-size: 14px;
 	line-height: 21px;
 	font-weight: normal;
-	font-family: "PTSans";
+	font-family: "PTSans", "Arial";
 	text-transform: uppercase;
 	background-color: #f2f2f2;
 }
@@ -57,6 +58,14 @@ h2 {
 	color: #000;
 	font-weight: bold;
 	line-height: 26px;
+}
+
+.main-nav a:hover {
+	color: #81b3d2;
+}
+
+.main-nav a:active {
+	color: #b2b2b2;
 }
 
 .main-nav li:nth-child(3) {
@@ -266,6 +275,8 @@ h2 {
 	text-transform: uppercase;
 	font-size: 21px;
 	font-weight: bold;
+	outline: none;
+	border: none;
 }
 
 .btn-search:hover {
@@ -286,15 +297,15 @@ h2 {
 /*						catalog.html 					*/
 
 .block-filter {
-	padding: 25px 72px;
-	background-color: red;
+	width: 1060px;
+	height: 167px;
+	padding: 25px 70px;
+	background: url("../img/bg-filter.jpg") no-repeat center;
 }
 
 .checkbox-filter {
 	width: 200px;
-	height: 200px;
 	float: left;
-	background-color: #0f0;
 } 
 
 .filter-cost {
@@ -313,12 +324,89 @@ h2 {
 	background-color: transparent;
 }
 
-.main-sort {
-	padding: 25px 70px;
+.btn-filter:hover {
+	background-color: #fff;
+	color: #000;
 }
 
-.main-sort ul li {
+.main-sort {
+	padding: 0 70px;
+}
+
+.main-sort h2 {
+	float: left;
+	line-height: 26px;
+	padding: 13px 0;
+	margin-right: 15px;
+}
+
+.sort-menu {
+	padding-top: 22px;
+	float: left;
+	width: 600px;
+}
+
+.sort-menu li {
 	display: inline-block;
+	margin-right: 30px;
+	font-size: 12px;
+	line-height: 18px;
+	text-align: left;
+}
+
+.sort-menu li:first-child {
+	margin-right: 40px;
+}
+
+.sort-menu li a {
+	text-decoration: none;
+	color: #b2b2b2;
+	border-bottom: 1px dotted #81b3d2;
+}
+
+.sort-menu li a:hover {
+	color: #81b3d2;
+}
+
+.sort-menu li a:active {
+	color: #000;
+}
+
+.btn-arrow {
+	float: right;
+	width: 11px;
+	height: 10px;
+	margin-top: 40px;
+	background: url("../img/btn-arrow.png") no-repeat center;
+	border: none;
+	font-size: 0;
+	outline: none;
+}
+
+.btn-arrow-up {
+	margin-right: 12px;
+	background-position: 0 0;
+}
+
+.btn-arrow-up:hover {
+	background-position: 0 -31px;
+}
+
+.btn-arrow-up:active {
+	background-position: 0 -65px;
+}
+
+.btn-arrow-down {
+	margin-right: 3px;
+	background-position: -27px 0;
+}
+
+.btn-arrow-down:hover {
+	background-position: -27px -31px;
+}
+
+.btn-arrow-down:active {
+	background-position: -27px -65px;
 }
 
 article {
@@ -337,28 +425,57 @@ article img {
 	float: left;
 }
 
-.content-description h2 {
+.name-place {
+	display: block;
+	text-decoration: none;
+	color: #000;
+	font-weight: bold;
 	font-size: 21px;
+	line-height: 18px;
+}
+
+.name-place:hover {
+	color: #81b3d2;
+}
+
+.name-place:active {
+	color: #b2b2b2;
 }
 
 .content-description span {
-	line-height: ;
+	display: inline-block;
+	line-height: 21px;
+	margin-top: 10px;
+	margin-bottom: 15px;
 }
 
 .block-more {
 	float: left;
+	margin-right: 8px;
 }
 
 .btn-more {
+	position: relative;
+	bottom: 0;
+	left: 0;
 	display: block;
 	width: 110px;
-	padding: 5px 0;	
-	
+	line-height: 26px;	
 	text-decoration: none;
 	text-align: center;
 	color: #fff;
+	font-size: 14px;
 	font-weight: bold;
 	background-color: #81b3d2;
+}
+
+.btn-more:hover {
+	background-color: #669ec0;
+}
+
+.btn-more:active {
+	background-color: #5496bd;
+	color: #88b6d1;
 }
 
 .block-reservation {
@@ -367,18 +484,58 @@ article img {
 
 .btn-reservation {
 	display: block;
-	width: 140px;
-	padding: 5px 0;	
-	margin-right: 5px;
+	width: 140px;	
 	text-decoration: none;
 	text-align: center;
 	color: #fff;
 	font-weight: bold;
+	line-height: 26px;
 	background-color: #766357;
 }
 
+.btn-reservation:hover {
+	background-color: #604e43;
+}
+
+.btn-reservation:active {
+	background-color: #503e33;
+	color: #857871;
+}
+
 .content-rating {
+	position: relative;
 	float: right;
+	width: 150px;
+	height: 90px;
+}
+
+.stars-rating {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 89px;
+	height: 17px;
+	background: url(../img/stars.png) no-repeat;
+}
+
+.stars-rating-amara {
+	background-position: 0 0;
+}
+
+.stars-rating-desert {
+	background-position: 48px 0;
+}
+
+.stars-rating-villas {
+	background-position: 26px 0;
+}
+
+.visual-rating {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	padding: 5px 15px;
+	background-color: #f2f2f2;
 }
 
 article:last-child {
@@ -390,6 +547,7 @@ article:last-child {
 section {
 	display: inline-block;
 	width: 400px;
+	height: 120px;
 	margin-right: -5px;
 	text-align: center;
 	line-height: 120px;
@@ -453,6 +611,7 @@ section {
 .footer-copyright a {
 	position: relative;
 	top: 15px;
+	left: 5px;
 	display: inline-block;
 	width: 113px;
 	height: 39px;
