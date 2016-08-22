@@ -127,24 +127,24 @@ h2 {
 }
 
 .text-block {
-	width: 340px;
+	width: 310px;
 	margin: 0 auto;
-	padding-top: 40px;
+	padding-top: 38px;
 }
 
 .text-block span {
-	line-height: 40px;
+	line-height: 36px;
 }
 
 .block-main-tips {
 	width: 1200px;
-	margin-bottom: 85px;
+	margin-bottom: 83px;
 }
 
 .main-tips {
-	width: 330px;
+	width: 300px;
 	float: left;
-	padding: 0 35px;
+	padding: 0 50px;
 	text-align: center;
 }
 
@@ -158,7 +158,7 @@ h2 {
 .main-tips h2 {
 	line-height: 21px;
 	font-size: 21px;
-	padding: 5px 0;
+	padding: 8px 0;
 }
 
 .main-tips span {
@@ -195,14 +195,22 @@ h2 {
 
 .reason-text {
 	float: left;
-	width: 300px;
-	padding: 35px 50px;
+	width: 278px;
+	padding: 35px 61px;
 	text-align: center;
-	vertical-align: middle;
+}
+
+.reason-text:last-child {
+	margin-right: 0;
+}
+
+.reason-text h2 {
+	margin: 0;
+	margin: 13px 0;
 }
 
 .reason-text span {
-	line-height: 36px;
+	line-height: 43px;
 }
 
 .date-travel {
@@ -478,7 +486,7 @@ article img {
 	color: #88b6d1;
 }
 
-.block-reservation {
+.block-reservation { 
 	float: right;
 }
 
