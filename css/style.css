@@ -7,7 +7,7 @@ body {
 	font-size: 14px;
 	line-height: 21px;
 	font-weight: normal;
-	font-family: "PTSans", "Arial";
+	font-family: "PTSans", "Arial", sans-serif;
 	text-transform: uppercase;
 	background-color: #f2f2f2;
 }
@@ -21,7 +21,7 @@ h1 {
 h2 {
 	font-size: 21px;
 	line-height: 21px;
-	font-weight: bold;
+	font-family: "PT Sans";
 }
 
 .clearfix:after {
@@ -96,7 +96,7 @@ h2 {
 }
 
 .descriptive h1 {
-	margin-bottom: 30px;
+	margin-bottom: 27px;
 }
 
 .descriptive p {
@@ -133,12 +133,12 @@ h2 {
 }
 
 .text-block span {
-	line-height: 36px;
+	line-height: 34px;
 }
 
 .block-main-tips {
 	width: 1200px;
-	margin-bottom: 83px;
+	margin-bottom: 81px;
 }
 
 .main-tips {
@@ -158,7 +158,8 @@ h2 {
 .main-tips h2 {
 	line-height: 21px;
 	font-size: 21px;
-	padding: 8px 0;
+	padding-top: 9px;
+	padding-bottom: 7px;
 }
 
 .main-tips span {
@@ -174,15 +175,16 @@ h2 {
 }
 
 .home {
-	background: url(../img/icon-house.png) no-repeat;
+	background: url(../img/icon-house.png) no-repeat 0 1px;
 }
 
 .food {
-	background: url("../img/icon-food.png") no-repeat;
+	background: url("../img/icon-food.png") no-repeat 0 2px;
+
 }
 
 .souvenirs {
-	background: url("../img/icon-souvenir.png") no-repeat;
+	background: url("../img/icon-souvenir.png") no-repeat 5px -2px;
 }
 
 .block-reason-text {
@@ -210,12 +212,12 @@ h2 {
 }
 
 .reason-text span {
-	line-height: 43px;
+	line-height: 38px;
 }
 
 .date-travel {
 	margin: 0 auto;
-	margin-bottom: 50px;
+	margin-bottom: 47px;
 	text-align: center;
 }
 
@@ -238,11 +240,12 @@ h2 {
 	position: relative;
 	display: block;
 	width: 570px;
-	min-height: 85px;
+	/*min-height: 85px;*/
+	padding: 30px 0;
 	color: #fff;
 	text-decoration: none;
 	text-align: center;
-	line-height: 85px;
+	line-height: 26px;
 	font-size: 21px;
 	font-weight: bold;
 	background-color: #766357;
@@ -298,7 +301,7 @@ h2 {
 
 .map {
 	width: 1200px;
-	height: 470px;
+	height: 473px;
 	background: #f2f1ef url("../img/map.jpg") no-repeat;
 }
 
@@ -345,7 +348,7 @@ h2 {
 	float: left;
 	line-height: 26px;
 	padding: 13px 0;
-	margin-right: 15px;
+	margin-right: 10px;
 }
 
 .sort-menu {
@@ -356,14 +359,14 @@ h2 {
 
 .sort-menu li {
 	display: inline-block;
-	margin-right: 30px;
+	margin-right: 29px;
 	font-size: 12px;
 	line-height: 18px;
 	text-align: left;
 }
 
 .sort-menu li:first-child {
-	margin-right: 40px;
+	margin-right: 36px;
 }
 
 .sort-menu li a {
@@ -378,6 +381,7 @@ h2 {
 
 .sort-menu li a:active {
 	color: #000;
+	border: none;
 }
 
 .btn-arrow {
@@ -392,7 +396,7 @@ h2 {
 }
 
 .btn-arrow-up {
-	margin-right: 12px;
+	margin-right: 10px;
 	background-position: 0 0;
 }
 
@@ -439,6 +443,7 @@ article img {
 	color: #000;
 	font-weight: bold;
 	font-size: 21px;
+	font-family: "PT Sans";
 	line-height: 18px;
 }
 
@@ -459,7 +464,7 @@ article img {
 
 .block-more {
 	float: left;
-	margin-right: 8px;
+	margin-right: 6px;
 }
 
 .btn-more {
@@ -473,7 +478,7 @@ article img {
 	text-align: center;
 	color: #fff;
 	font-size: 14px;
-	font-weight: bold;
+	font-family: "PT Sans";
 	background-color: #81b3d2;
 }
 
@@ -496,7 +501,7 @@ article img {
 	text-decoration: none;
 	text-align: center;
 	color: #fff;
-	font-weight: bold;
+	font-family: "PT Sans";
 	line-height: 26px;
 	background-color: #766357;
 }
@@ -531,18 +536,19 @@ article img {
 }
 
 .stars-rating-desert {
-	background-position: 48px 0;
+	background-position: 47px 0;
 }
 
 .stars-rating-villas {
-	background-position: 26px 0;
+	background-position: 24px 0;
 }
 
 .visual-rating {
 	position: absolute;
 	bottom: 0;
 	right: 0;
-	padding: 5px 15px;
+	padding: 3px 12px;
+	padding-left: 15px;
 	background-color: #f2f2f2;
 }
 
@@ -555,10 +561,10 @@ article:last-child {
 section {
 	display: inline-block;
 	width: 400px;
-	height: 120px;
+	height: 95px;
+	margin-top: 25px;
 	margin-right: -5px;
 	text-align: center;
-	line-height: 120px;
 }
 
 .footer-instagram a {
@@ -575,7 +581,6 @@ section {
 	width: 46px;
 	height: 48px;
 	vertical-align: middle;
-	margin: 0 2px;
 	text-decoration: none;
 	background: #81b3d2 url("../img/icon-social.png") no-repeat center;
 }
@@ -586,6 +591,7 @@ section {
 
 .btn-social-fb {
  background-position: -52px 0;
+ margin: 0 2px;
 }
 
 .btn-social-yt {
