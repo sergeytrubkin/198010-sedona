@@ -1,13 +1,24 @@
 @font-face {
-	font-family: "PTSans";
-	src: url(../fonts/web/ptsans.woff);
+	font-family: "PT Sans";
+	font-weight: 400;
+	font-style: normal;
+	src: url("../fonts/web/ptsans.woff") format("woff"),
+	url("../fonts/web/ptsans.woff2") format("woff");
+}
+
+@font-face {
+	font-family: "PT Sans";
+	font-weight: 700;
+	font-style: normal;
+	src: url("../fonts/web/ptsansbold.woff2") format("woff2"),
+	url("../fonts/web/ptsansbold.woff") format("woff");
 }
 
 body {
 	font-size: 14px;
 	line-height: 21px;
 	font-weight: normal;
-	font-family: "PTSans", "Arial", sans-serif;
+	font-family: "PT Sans", "Arial", sans-serif;
 	text-transform: uppercase;
 	background-color: #f2f2f2;
 }
@@ -21,7 +32,7 @@ h1 {
 h2 {
 	font-size: 21px;
 	line-height: 21px;
-	font-family: "PT Sans";
+	font-weight: bold;
 }
 
 .clearfix:after {
@@ -41,22 +52,40 @@ h2 {
 .main-nav {
 	padding: 0;
 	margin: 0;
+	padding: 18px 72px;
+	padding-bottom: 20px;
 }
 
 .main-nav li {
 	display: inline-block;
-	width: 240px;
-	padding-top: 15px;
-	padding-bottom: 15px;
 	margin:0;
-	margin-right: -5px;	
+	margin-right: -2px;	
+	margin-left: 0px;
+	vertical-align: middle;
 	text-align: center;
+}
+
+.main-nav li:first-child {
+	margin-right: 148px;
+}
+
+.main-nav li:nth-child(1), .main-nav li:nth-child(2) {
+	float: left;
+}
+
+.main-nav li:nth-child(4), .main-nav li:nth-child(5) {
+	float: right;
+}
+
+.main-nav li:nth-child(4) {
+	margin-right: 0px;
+	margin-left: 167px;
 }
 
 .main-nav a {
 	text-decoration: none;
 	color: #000;
-	font-weight: bold;
+	font-weight: 700;
 	line-height: 26px;
 }
 
@@ -74,8 +103,8 @@ h2 {
 
 .main-nav img {
 	position: absolute;
-	left: 53px;
-	top: -2px;
+	left: 123px;
+	top: -26px;
 }
 
 /*									main 									*/
