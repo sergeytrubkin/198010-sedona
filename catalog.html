@@ -21,9 +21,9 @@
 	</header>
 	<main class="conteiner">
 		<div class="block-filter clearfix">
-			<form class="filter-form" action="#" method="post">
+			<form class="filter-form clearfix" action="#" method="post">
 				<fieldset class="checkbox-filter">
-					<legend>Инфраструктура</legend>
+					<legend>Инфраструктура:</legend>
 					<input id="pool" type="checkbox" name="pool" checked>
 					<label for="pool">Бассейн</label>
 					<input id="parking" type="checkbox" name="parking">
@@ -38,13 +38,25 @@
 					<input id="motel" type="checkbox" name="motel" checked>
 					<label for="motel">Мотель</label>
 					<input id="appartments" type="checkbox" name="appartments" checked>
-					<label for="appartments">Аппартаменты</label>
+					<label for="appartments">Апартаменты</label>
 				</fieldset>
 				<fieldset class="filter-cost">
-					<legend>Стоимость в сутки (Р):</legend>
-					<input type="range" name="day-cost" min="0" max="3000" step="1">
+					<div class="filter-range">
+						<div class="filter-range-title">Стоимость в сутки (р):</div>
+						<div class="price-controls">
+							<label class="min-price">от <input type="text" name="min-price" value="0"></label>
+							<label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+						</div>
+						<div class="range-controls">
+							<div class="scale">
+								<div class="bar"></div>
+							</div>
+							<div class="range-toggle range-toggle-min"></div>
+							<div class="range-toggle range-toggle-max"></div>
+						</div>
+						<button class="btn-transparent" type="submit">Показать</button>
+					</div>
 				</fieldset>
-				<button class="btn-filter" type="submit">Показать</button>
 			</form>
 		</div>
 		<div class="main-sort clearfix">
@@ -120,15 +132,15 @@
 		</article>
 	</main>
 	<footer class="conteiner">
-		<section class="footer-instagram">
+		<section class="inner-block footer-instagram">
 			<a href="#">#visitsedona</a>
 		</section>
-		<section class="footer-social">
+		<section class="inner-block footer-social">
 			<a class="btn-social btn-social-tw" href="#">Твиттер</a>
 			<a class="btn-social btn-social-fb" href="#">Фейсбук</a>
 			<a class="btn-social btn-social-yt" href="#">YouTube</a>
 		</section>
-		<section class="footer-copyright">
+		<section class="inner-block footer-copyright">
 			<span>website by</span>
 			<a href="#"><!-- <img src="img/htmlacademy.png" alt="" width="113" height="39"> --></a>
 		</section>

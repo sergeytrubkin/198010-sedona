@@ -13,23 +13,24 @@
 				<li><a href="#">Информация</a></li>
 				<li><a href="#">Фото и видео</a></li>
 				<li><a><img src="img/logo.png" alt="логотип" width="138" height="70"></a></li>
-				<li><a href="#">Карта штата</a></li>
 				<li><a href="catalog.html">Гостиницы</a></li>
+				<li><a href="#">Карта штата</a></li>
+				
 			</ul>
 		</nav>
 	</header>
 	<main class="conteiner">
 		<div class="welcome-img">
-			<!-- <img src="img/Welcome.jpg" alt="Приветсвие" width="1200" height="564"> -->
+			<img src="img/Welcome.jpg" alt="Приветсвие" width="1200" height="508">
 		</div>
 		<div class="descriptive">
-			<h1>Седона - небольшой городок в аризоне, заслуживающий большего!</h1>
+			<h1>Седона — небольшой городок в аризоне, заслуживающий большего!</h1>
 			<p>Рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</p>
 		</div>
 		<div class="block-reason-img">
 			<div class="reason-description town">
 				<div class="text-block">
-					<h2>Настоящий<br> городок</h2>
+					<h2>Настоящий городок</h2>
 					<span>— №1 —</span>
 					<p>Седона — не аттракцион для туристов, там течет своя жизнь</p>
 				</div>
@@ -61,7 +62,7 @@
 		<div class="block-reason-img">
 			<div class="reason-description bridge">
 				<div class="text-block">
-					<h2>Там есть<br> мост дьявола</h2>
+					<h2>Там есть мост дьявола</h2>
 					<span>— №2 —</span>
 					<p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
 				</div>
@@ -72,17 +73,17 @@
 		</div>
 		<div class="block-reason-text clearfix">
 			<div class="reason-text">
-				<h2>Небольшая<br> площадь</h2>
+				<h2>Небольшая площадь</h2>
 				<span>— №3 —</span>
 				<p>Все достопримечательности находятся очень близко</p>
 			</div>
 			<div class="reason-text">
-				<h2>Красивая<br> дорога</h2>
+				<h2>Красивая дорога</h2>
 				<span>— №4 —</span>
 				<p>Ехать в седону из лас-вегаса совсем не скучно!</p>
 			</div>
 			<div class="reason-text">
-				<h2>Мало<br> туристов</h2>
+				<h2>Мало туристов</h2>
 				<span>— №5 —</span>
 				<p>Большинство едет в гранд каньон и толпится там</p>
 			</div>
@@ -94,17 +95,32 @@
 		<div class="search-hotel">
 			<a href="#" class="btn">Поиск гостиницы в седоне</a>
 			<form class="search-hotel-form" action="#">
-				<label for="date-arrival">Дата заезда:</label>
-				<input id="date-arrival" type="date" name="date-arrival" >
+				<div class="date-arrival clearfix">
+					<label for="date-arrival">Дата заезда:</label>
+					<input id="date-arrival" type="text" name="date-arrival" value="24 апреля 2016">
+					<button class="calendar"></button>
+				</div>
 
-				<label for="date-departure">Дата выезда:</label>
-				<input id="date-departure" type="date" name="date-departure">
+				<div class="date-departure">
+					<label for="date-departure">Дата выезда:</label>
+					<input id="date-departure" type="text" name="date-departure" value="4 июля 2016">
+					<button class="calendar"></button>
+				</div>
 
-				<label for="adults">Взрослые:</label>
-				<input id="adults" type="number" name="adults" min="0" step="1" value="2">
+				<div class="adults">
+					<label for="adults">Взрослые:</label>
+					<button class="btn-change-number btn-minus-number"></button>
+					<input id="adults" type="text" name="adults" value="2">
+					<button class="btn-change-number btn-plus-number"></button>
+				</div>
 
-				<label for="children">Дети:</label>
-				<input id="children" type="number" name="children" min="0" step="1" value="0">
+				<div class="children">
+					<label for="children">Дети:</label>
+					<button class="btn-change-number btn-minus-number"></button>
+					<input id="children" type="text" name="children" value="0">
+					<button class="btn-change-number btn-plus-number"></button>
+				</div>
+
 				<button class="btn-search" type="submit">Найти</button>
 			</form>
 		</div>
@@ -113,15 +129,15 @@
 		</div>
 	</main>
 	<footer class="conteiner">
-		<section class="footer-instagram">
+		<section class="inner-block footer-instagram">
 			<a href="#">#visitsedona</a>
 		</section>
-		<section class="footer-social">
+		<section class="inner-block footer-social">
 			<a class="btn-social btn-social-tw" href="#">Твиттер</a>
 			<a class="btn-social btn-social-fb" href="#">Фейсбук</a>
 			<a class="btn-social btn-social-yt" href="#">YouTube</a>
 		</section>
-		<section class="footer-copyright">
+		<section class="inner-block footer-copyright">
 			<span>website by</span>
 			<a href="#"><!-- <img src="img/htmlacademy.png" alt="" width="113" height="39"> --></a>
 		</section>
