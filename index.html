@@ -94,41 +94,10 @@
 		</div>
 		<div class="search-hotel">
 			<a href="#" class="btn">Поиск гостиницы в седоне</a>
-			<form class="search-hotel-form" action="#">
-				<div class="date-arrival clearfix">
-					<label for="date-arrival">Дата заезда:</label>
-					<input id="date-arrival" type="text" name="date-arrival" value="24 апреля 2016">
-					<button class="calendar"></button>
-				</div>
-
-				<div class="date-departure">
-					<label for="date-departure">Дата выезда:</label>
-					<input id="date-departure" type="text" name="date-departure" value="4 июля 2016">
-					<button class="calendar"></button>
-				</div>
-
-				<div class="adults">
-					<label for="adults">Взрослые:</label>
-					<button class="btn-change-number btn-minus-number"></button>
-					<input id="adults" type="text" name="adults" value="2">
-					<button class="btn-change-number btn-plus-number"></button>
-				</div>
-
-				<div class="children">
-					<label for="children">Дети:</label>
-					<button class="btn-change-number btn-minus-number"></button>
-					<input id="children" type="text" name="children" value="0">
-					<button class="btn-change-number btn-plus-number"></button>
-				</div>
-
-				<button class="btn-search" type="submit">Найти</button>
-			</form>
 		</div>
-		<div class="map">
-			<!-- <img src="img/map.jpg" alt="" width="1200" height="593"> -->
-		</div>
+		<div class="map">Карта</div>
 	</main>
-	<footer class="conteiner">
+	<footer class="conteiner conteiner-footer">
 		<section class="inner-block footer-instagram">
 			<a href="#">#visitsedona</a>
 		</section>
@@ -142,5 +111,45 @@
 			<a href="#"><!-- <img src="img/htmlacademy.png" alt="" width="113" height="39"> --></a>
 		</section>
 	</footer>
+
+	<form class="search-hotel-form" action="#">
+		<div class="date-arrival clearfix">
+			<label for="date-arrival">Дата заезда:</label>
+			<input id="date-arrival" type="text" name="date-arrival" value="24 апреля 2016">
+			<button class="calendar"></button>
+		</div>
+
+		<div class="date-departure">
+			<label for="date-departure">Дата выезда:</label>
+			<input id="date-departure" type="text" name="date-departure" value="4 июля 2016">
+			<button class="calendar"></button>
+		</div>
+
+		<div class="adults">
+			<label for="adults">Взрослые:</label>
+			<button class="btn-change-number btn-minus-number"></button>
+			<input id="adults" type="text" name="adults" value="2">
+			<button class="btn-change-number btn-plus-number"></button>
+		</div>
+
+		<div class="children">
+			<label for="children">Дети:</label>
+			<button class="btn-change-number btn-minus-number"></button>
+			<input id="children" type="text" name="children" value="0">
+			<button class="btn-change-number btn-plus-number"></button>
+		</div>
+		<button class="btn-search" type="submit">Найти</button>
+	</form>
+	<script>
+		var link = document.querySelector(".search-hotel .btn");
+
+		var popup = document.querySelector(".search-hotel-form");
+
+		link.addEventListener("click", function(event) {
+			event.preventDefault();
+			popup.classList.add("content-show");
+			link.classList.add("btn-close");
+		})
+	</script>
 </body>
 </html>
