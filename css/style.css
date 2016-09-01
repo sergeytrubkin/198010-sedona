@@ -44,6 +44,9 @@ h2 {
 .conteiner {
 	width: 1200px;
 	margin: 0 auto;
+	box-shadow:
+		-10px 0px 15px -9px rgba(0, 0, 0, 0.15),
+		10px 0px 15px -9px rgba(0, 0, 0, 0.15);
 	background-color: #fff;
 }
 
@@ -280,12 +283,12 @@ h2 {
 }
 
 .search-hotel {
+	position: relative;
 	width: 568px;
 	margin: 0 auto;
 }
 
 .search-hotel .btn {
-	position: relative;
 	display: block;
 	width: 568px;
 	padding: 30px 0;
@@ -301,12 +304,14 @@ h2 {
 .search-hotel-form {
 	display: none;
 	position: absolute;
-	bottom: -1832px;
+	bottom: -395px;
 	left: 50%;
 	width: 458px;
 	padding: 55px;
 	margin-left: -284px;
 	background-color: #fff;
+	box-shadow: 0 7px 15px rgba(0, 0, 0, 0.15);
+	z-index: 3;
 }
 
 .content-show {
@@ -398,6 +403,7 @@ h2 {
 .adults, .children {
 	display: inline-block;
 	margin-bottom: 54px;
+	vertical-align: middle;
 }
 
 .adults label {
@@ -485,11 +491,14 @@ h2 {
 	background-color: #5496bd;
 }
 
-.map {
+#map {
+	position: relative;
 	width: 1200px;
 	height: 593px;
 	font-size: 0;
+	line-height: 0;
 	background: #f2f1ef url("../img/map.jpg") no-repeat;
+	z-index: 2;
 }
 
 /*						catalog.html 					*/
@@ -747,6 +756,7 @@ input[type="checkbox"]:disabled + label::before {
 	margin-top: 40px;
 	border: none;
 	font-size: 0;
+	cursor: pointer;
 	outline: none;
 }
 
@@ -921,8 +931,11 @@ input[type="checkbox"]:disabled + label::before {
 /*							footer 							*/
 
 .conteiner-footer {
+	position: relative;
 	margin-top: -120px;
+	box-shadow: none;
 	background-color: rgba(255, 255, 255, 0.9);
+	z-index: 3;
 }
 
 .inner-block  {

@@ -15,7 +15,6 @@
 				<li><a><img src="img/logo.png" alt="логотип" width="138" height="70"></a></li>
 				<li><a href="catalog.html">Гостиницы</a></li>
 				<li><a href="#">Карта штата</a></li>
-				
 			</ul>
 		</nav>
 	</header>
@@ -54,7 +53,6 @@
 			</div>
 			<div class="main-tips">
 				<div class="main-tips-icon souvenirs"></div>
-				<!-- <img src="img/icon-souvenir.png" alt="" width="64" height="76"> -->
 				<h2>Сувениры</h2>
 				<span>Не только китайского, но и местного производства!</span>
 			</div>
@@ -94,8 +92,36 @@
 		</div>
 		<div class="search-hotel">
 			<a href="#" class="btn">Поиск гостиницы в седоне</a>
+			<form class="search-hotel-form" action="#">
+				<div class="date-arrival clearfix">
+					<label for="date-arrival">Дата заезда:</label>
+					<input id="date-arrival" type="text" name="date-arrival" value="24 апреля 2016">
+					<button class="calendar"></button>
+				</div>
+
+				<div class="date-departure">
+					<label for="date-departure">Дата выезда:</label>
+					<input id="date-departure" type="text" name="date-departure" value="4 июля 2016">
+					<button class="calendar"></button>
+				</div>
+
+				<div class="adults">
+					<label for="adults">Взрослые:</label>
+					<button class="btn-change-number btn-minus-number"></button>
+					<input id="adults" type="text" name="adults" value="2">
+					<button class="btn-change-number btn-plus-number"></button>
+				</div>
+
+				<div class="children">
+					<label for="children">Дети:</label>
+					<button class="btn-change-number btn-minus-number"></button>
+					<input id="children" type="text" name="children" value="0">
+					<button class="btn-change-number btn-plus-number"></button>
+				</div>
+				<button class="btn-search" type="submit">Найти</button>
+			</form>
 		</div>
-		<div class="map">Карта</div>
+		<div id="map">Карта</div>
 	</main>
 	<footer class="conteiner conteiner-footer">
 		<section class="inner-block footer-instagram">
@@ -108,38 +134,10 @@
 		</section>
 		<section class="inner-block footer-copyright">
 			<span>website by</span>
-			<a href="#"><!-- <img src="img/htmlacademy.png" alt="" width="113" height="39"> --></a>
+			<a href="#"></a>
 		</section>
 	</footer>
 
-	<form class="search-hotel-form" action="#">
-		<div class="date-arrival clearfix">
-			<label for="date-arrival">Дата заезда:</label>
-			<input id="date-arrival" type="text" name="date-arrival" value="24 апреля 2016">
-			<button class="calendar"></button>
-		</div>
-
-		<div class="date-departure">
-			<label for="date-departure">Дата выезда:</label>
-			<input id="date-departure" type="text" name="date-departure" value="4 июля 2016">
-			<button class="calendar"></button>
-		</div>
-
-		<div class="adults">
-			<label for="adults">Взрослые:</label>
-			<button class="btn-change-number btn-minus-number"></button>
-			<input id="adults" type="text" name="adults" value="2">
-			<button class="btn-change-number btn-plus-number"></button>
-		</div>
-
-		<div class="children">
-			<label for="children">Дети:</label>
-			<button class="btn-change-number btn-minus-number"></button>
-			<input id="children" type="text" name="children" value="0">
-			<button class="btn-change-number btn-plus-number"></button>
-		</div>
-		<button class="btn-search" type="submit">Найти</button>
-	</form>
 	<script>
 		var link = document.querySelector(".search-hotel .btn");
 
@@ -147,9 +145,10 @@
 
 		link.addEventListener("click", function(event) {
 			event.preventDefault();
-			popup.classList.add("content-show");
-			link.classList.add("btn-close");
+			popup.classList.toggle("content-show");
 		})
+	</script>
+	<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=9JM_gMxbqi0PsrgPAIRhGGZKNlqbVnqI&amp;width=1200&amp;height=593&amp;id=map&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true">
 	</script>
 </body>
 </html>
