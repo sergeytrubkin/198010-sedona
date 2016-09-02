@@ -6,23 +6,22 @@ var adults = popup.querySelector("[name=adults]");
 var children = popup.querySelector("[name=children]");
 
 link.addEventListener("click", function(event) {
-	event.preventDefault();
-	popup.classList.toggle("content-show");
-	arrival.focus();
+    event.preventDefault();
+    popup.classList.toggle("content-show");
+    arrival.focus();
 })
 
 popup.addEventListener("submit", function(event) {
-	if (!arrival.value || !departure.value || !adults.value || !children.value) {
-		event.preventDefault();
-		alert("Все поля формы должны быть заполнены");
-	}
+    if (!arrival.value || !departure.value || !adults.value || !children.value) {
+        event.preventDefault();
+        alert("Все поля формы должны быть заполнены");
+    }
 })
 
 window.addEventListener("keydown", function(event) {
-	if (event.keyCode === 27) {
-		if (popup.classList.contains("content-show")) {
-			popup.classList.remove("content-show");
-		}
-	}
+    if (event.keyCode === 27) {
+        if (popup.classList.contains("content-show")) {
+            popup.classList.remove("content-show");
+        }
+    }
 })
-
