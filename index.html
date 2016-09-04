@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-	<header class="conteiner">
+	<header class="container">
 		<nav class="main-navigation">
 			<ul class="main-nav">
 				<li><a href="#">Информация</a></li>
@@ -18,15 +18,15 @@
 			</ul>
 		</nav>
 	</header>
-	<main class="conteiner">
+	<main class="container">
 		<div class="welcome-img">
-			<img src="img/Welcome.jpg" alt="Приветсвие" width="1200" height="508">
+			<img src="img/welcome.jpg" alt="Приветсвие" width="1200" height="508">
 		</div>
 		<div class="descriptive">
 			<h1>Седона — небольшой городок в аризоне, заслуживающий большего!</h1>
 			<p>Рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</p>
 		</div>
-		<div class="block-reason-img">
+		<div class="block-reason-img clearfix">
 			<div class="reason-description town">
 				<div class="text-block">
 					<h2>Настоящий городок</h2>
@@ -34,7 +34,7 @@
 					<p>Седона — не аттракцион для туристов, там течет своя жизнь</p>
 				</div>
 			</div>
-			<div class="reason-img">
+			<div class="reason-img-town">
 				<img src="img/town.jpg" alt="" width="800" height="256">
 			</div>
 		</div>
@@ -63,7 +63,7 @@
 					<p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
 				</div>
 			</div>
-			<div class="reason-img">
+			<div class="reason-img-bridge">
 				<img src="img/bridge.jpg" alt="" width="800" height="256">
 			</div>
 		</div>
@@ -86,10 +86,10 @@
 		</div>
 		<div class="date-travel">
 			<h2>Заинтересовались?</h2>
-			<p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
+			<p><span>Укажите предполагаемые даты поездки,</span> и мы покажем вам лучшие предложения гостиниц в седоне</p>
 		</div>
 		<div class="search-hotel">
-			<a href="#" class="btn">Поиск гостиницы в седоне</a>
+			<a href="form.html" class="btn">Поиск гостиницы в седоне</a>
 			<form class="search-hotel-form" action="#">
 				<div class="date-arrival clearfix">
 					<label for="date-arrival">Дата заезда:</label>
@@ -121,7 +121,7 @@
 		</div>
 		<div id="map">Карта</div>
 	</main>
-	<footer class="conteiner conteiner-footer">
+	<footer class="container container-footer">
 		<section class="inner-block footer-instagram">
 			<a href="#">#visitsedona</a>
 		</section>
