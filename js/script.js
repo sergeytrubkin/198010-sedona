@@ -5,14 +5,9 @@ var departure = popup.querySelector("[name=date-departure]");
 var adults = popup.querySelector("[name=adults]");
 var children = popup.querySelector("[name=children]");
 
-function animation() {
-	popup.classList.toggle("animation");
-}
-
 link.addEventListener("click", function(event) {
 	event.preventDefault();
 	popup.classList.toggle("content-show");
-	setTimeout(animation, 10);
 })
 
 popup.addEventListener("submit", function(event) {
