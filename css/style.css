@@ -152,7 +152,6 @@ h2 {
 	margin-bottom: 60px;
 	background-color: #81b3d2;
 	color: #fff;
-	overflow: hidden;
 }
 
 .reason-description {
@@ -173,7 +172,6 @@ h2 {
 	height: 200px;
 	margin: 0 auto;
 	padding-top: 56px;
-	overflow: hidden;
 }
 
 .text-block h2 {
@@ -191,12 +189,10 @@ h2 {
 .reason-img-town {
 	max-width: 800px;
 	float: right;
-	overflow: hidden;
 }
 
 .reason-img-bridge {
 	max-width: 800px;
-	overflow: hidden;
 }
 
 .block-main-tips {
@@ -231,16 +227,16 @@ h2 {
 }
 
 .home {
-	background: #fff url(../img/icon-house.png) no-repeat 0 1px;
+	background: url(../img/icon-house.png) no-repeat 0 1px;
 }
 
 .food {
-	background: #fff url("../img/icon-food.png") no-repeat 0 2px;
+	background: url("../img/icon-food.png") no-repeat 0 2px;
 
 }
 
 .souvenirs {
-	background: #fff url("../img/icon-souvenir.png") no-repeat 5px -2px;
+	background: url("../img/icon-souvenir.png") no-repeat 5px -2px;
 }
 
 .block-reason-text {
@@ -429,7 +425,7 @@ h2 {
 	height: 38px;
 	padding: 0;
 	margin-top: -19px;
-	background: #f2f2f2 url("../img/calendar.png") no-repeat 10px 9px;
+	background: url("../img/calendar.png") no-repeat 10px 9px;
 	border: 0;
 	outline: 0;
 	cursor: pointer;
@@ -819,7 +815,7 @@ input[type="checkbox"]:disabled + label::before {
 
 .btn-arrow-up {
 	margin-right: 10px;
-	background: #fff url("../img/btn-arrow.png") no-repeat 0 0;
+	background: url("../img/btn-arrow.png") no-repeat 0 0;
 }
 
 .btn-arrow-up:hover {
@@ -832,7 +828,7 @@ input[type="checkbox"]:disabled + label::before {
 
 .btn-arrow-down {
 	margin-right: 2px;
-	background: #fff url("../img/btn-arrow.png") no-repeat -27px 0;
+	background: url("../img/btn-arrow.png") no-repeat -27px 0;
 	background-position: -27px 0;
 }
 
@@ -957,7 +953,7 @@ input[type="checkbox"]:disabled + label::before {
 	right: 0;
 	width: 89px;
 	height: 17px;
-	background: #fefefe url("../img/stars.png") no-repeat;
+	background: url("../img/stars.png") no-repeat;
 }
 
 .stars-rating-one {
@@ -1023,7 +1019,7 @@ input[type="checkbox"]:disabled + label::before {
 	font-size: 0;
 	vertical-align: middle;
 	text-decoration: none;
-	background: #81b3d2 url("../img/icon-social.png") no-repeat center;
+	background: url("../img/icon-social.png") no-repeat center;
 }
 
 .btn-social-tw {
@@ -1078,7 +1074,7 @@ input[type="checkbox"]:disabled + label::before {
 	margin-left: 3px;
 	margin-top: 32px;
 	vertical-align: middle;
-	background: #fff url("../img/icon-copyright.png") no-repeat;
+	background: url("../img/icon-copyright.png") no-repeat;
 }
 
 .footer-copyright a:hover {
