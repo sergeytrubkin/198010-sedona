@@ -855,6 +855,8 @@ input[type="checkbox"]:disabled + label::before {
 }
 
 .content-block img {
+	width: 135px;
+	height: 90px;
 	float: left;
 	margin-right: 30px;
 }
