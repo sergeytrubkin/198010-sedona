@@ -100,6 +100,7 @@ h2 {
 
 .main-nav li:nth-child(3) {
 	position: relative;
+	z-index: 5;
 }
 
 .main-nav img {
@@ -125,10 +126,16 @@ h2 {
 /*								index.html							*/
 
 .welcome-img {
+	position: relative;
 	width: 1200px;
 	height: 508px;
 	line-height: 0;
 	margin-bottom: 60px;
+}
+
+.main-img-bottom {
+	position: absolute;
+	bottom: 0;
 }
 
 .descriptive {
